@@ -1,0 +1,58 @@
+#!/usr/bin/python3
+
+#function definition
+
+def fibbonachi(n):  # the keyword 'def', then function name, then (arguments list):
+    if (n <= 2):
+        return 1  # if you want to get some result from function, write 'return' and value. If this line is evaluated, 
+                  # you leave the function.
+    else:
+        return fibbonachi(n - 1) + fibbonachi(n - 2)
+
+print("type a number")
+n = int(input())  # input value, it's a number
+print(fibbonachi(n))
+
+#array = list(map(int, input().split())) how to input an array by one line
+print("type a list of numbers, separated by spaces, for example, this line\n1 2 3 4 5")
+string = input() #what we have actually got
+print(string, "look at it")
+first_list = string.split()
+print(first_list, "\twe have parsed our line, first space means the end of the first element, and so on")
+second_list = list(map(int, first_list))
+print(second_list, "\t\tfunction 'map' calls function at first parameter, for each element from second parameter")
+print("\t\t\tobject, which we have got, we need to cast to list - name of array class in python3")
+#this code doing the same
+second_list = [0] * len(first_list) #creation of an array, which has n elements, 
+                                    #where n - amount of elements in the
+                                    #first_list, and all elements are equal to 0
+for i in range(len(first_list)):
+    second_list[i] = int(first_list[i])
+#as you can notice, line 18 is much more short, than 22-26
+print(second_list)
+print("if you want to end it, press q, then Enter")
+quit_string = input()
+if (quit_string == 'q'):
+    print("ok, bye")
+    exit(0)
+
+#look at these functions
+second_list.append(179) #adding value to the end of list
+print(second_list, "\t\t", "second_list.append(179)")
+a = second_list.pop() #removing value from the end
+print(second_list, "\t\t\t", "a = second_list.pop() ")
+print(a)
+second_list.append("a")
+print(second_list, "\t\t", "second_list.append('a')")
+second_list.extend(["b", "c", "d"])
+print(second_list, " second_list.extend(['b', 'c', 'd'])")
+second_list.append(["b", "c", "d"])
+print("-" * 100)
+
+print(second_list, "\t", "print(second_list)")
+print(second_list[0], "\t\t\t\t\t\t", "print(second_list[0])")
+print(second_list[0:2], "\t\t\t\t\t", "print(second_list[0:2])")
+print(second_list[0:-1], "\t\t\t", "print(second_list[0:-1])")
+print(second_list[::-1], "\t", "print(second_list[::-1])")
+
+
