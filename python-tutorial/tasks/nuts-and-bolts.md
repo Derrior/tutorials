@@ -28,8 +28,8 @@
 
 | Ввод    | Вывод   |
 |--------:|:--------|
-|abcdefghi|a e i    |
-|abc      |abc      |
+|`abcdefghi`|`a e i`    |
+|`abc`      |`abc`      |
 
 ### 2
 Выведите 100 строк вида `Hello, World!`.
@@ -40,7 +40,7 @@
 
 | Ввод    | Вывод   |
 |--------:|:--------|
-|abcdefghi|aaaaeiiii|
-|abc      | abc     |
+|`abcdefghi`|`aaaaeiiii`|
+|`abc`      | `abc`     |
 
 
