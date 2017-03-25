@@ -44,9 +44,7 @@
 ##### Пример:
 | Вывод   |
 |:--------|
-|`Hello, World!`|
-|`...`|
-|`Hello, World!`|
+|`Hello, World!`<br>`...`<br>`Hello, World!`|
 
 
 ### 3
